@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 웹페이지</title>
+    <link rel="stylesheet" href="gowun-dodum.css">
+    <link rel="stylesheet" href="cannon.css">
+</head>
+<body>
+    <div class="cannon-container">
+        <h1 class="cannon-title">🎲 대포뽑기</h1>
+        <div class="input-group">
+            <label for="maxNum">번호 몇 번까지?</label>
+            <input type="number" id="maxNum" min="1" max="100" value="29">
+            <button id="fireBtn">대포 발사!</button>
+        </div>
+        <div class="cannon-area">
+            <div class="cannon">
+                <div class="cannon-barrel"></div>
+                <div class="cannon-base"></div>
+                <div class="cannon-wheel"></div>
+                <div class="cannon-wheel right"></div>
+            </div>
+            <div id="ball" class="ball hidden">?</div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="cannon.js"></script>
+</body>
+</html>
